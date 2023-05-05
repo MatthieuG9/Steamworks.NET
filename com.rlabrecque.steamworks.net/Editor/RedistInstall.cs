@@ -12,7 +12,8 @@ using System.Collections.Generic;
 public class RedistInstall {
 	static RedistInstall() {
 		WriteSteamAppIdTxtFile();
-		AddDefineSymbols();
+		Debug.Log("Add symbols is disabled, don't forget to add STEAMWORKS_NET if you need steam");
+		// AddDefineSymbols();
 		CheckForOldDlls();
 	}
 
